@@ -18,9 +18,10 @@ Focarei esse portifólio mais em projetos de Data Science, o que não significa 
 ## Projetos:
 Veja os tutoriais publicados do Sigmoidal:
 
-* **Calculadora Simples feita em Python:** https://bit.ly/3f9fDjR
+* **Calculadora simples feita em Python:** https://bit.ly/3f9fDjR
 * **Modelo de Blockchain feito em Python:** https://bit.ly/2XFbxKa
-* **Análise de dados do Airbnbn de Sydney** https://bit.ly/2YbDvwf
+* **Análise de dados do Airbnbn de Sydney:** https://bit.ly/2YbDvwf
+* **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL 
 
 ---
 
