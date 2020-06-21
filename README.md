@@ -21,7 +21,8 @@ Veja os tutoriais publicados do Sigmoidal:
 * **Calculadora simples feita em Python:** https://bit.ly/3f9fDjR
 * **Modelo de Blockchain feito em Python:** https://bit.ly/2XFbxKa
 * **Análise de dados do Airbnbn de Sydney:** https://bit.ly/2YbDvwf
-* **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL 
+* **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL
+* **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
 
 ---
 
