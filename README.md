@@ -23,6 +23,7 @@ Veja os tutoriais publicados do Sigmoidal:
 * **Análise de dados do Airbnbn de Sydney:** https://bit.ly/2YbDvwf
 * **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL
 * **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
+* **Detecção de Fraude em Cartões de Crédito:** https://bit.ly/38k0WYY
 
 ---
 
