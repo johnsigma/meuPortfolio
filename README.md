@@ -9,7 +9,7 @@ Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia
 
 Focarei esse portifólio mais em projetos de Data Science, o que não significa que apenas esses projetos serão linkados aqui.
 
-**Background in:** Python, C, Haskell, Análise de Dados.
+**Background in:** Python, Análise de Dados, Ciência de Dados, Machine Learning.
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/john-cunha-a424721aa/)
