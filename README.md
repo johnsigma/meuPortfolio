@@ -25,8 +25,6 @@ Veja os tutoriais publicados do Sigmoidal:
 * **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
 * **Detecção de Fraude em Cartões de Crédito:** https://bit.ly/38k0WYY
 
-https://bit.ly/3iDIa3d
-
 ---
 
 
