@@ -9,7 +9,7 @@ Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia
 
 Focarei esse portifólio mais em projetos de Data Science, o que não significa que apenas esses projetos serão linkados aqui.
 
-**Background in:** Python, C, Haskell, Análise de Dados.
+**Background in:** Python, Análise de Dados, Ciência de Dados, Machine Learning.
 
 **Links:**
 * [LinkedIn](https://www.linkedin.com/in/john-cunha-a424721aa/)
@@ -23,6 +23,7 @@ Veja os tutoriais publicados do Sigmoidal:
 * **Análise de dados do Airbnbn de Sydney:** https://bit.ly/2YbDvwf
 * **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL
 * **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
+* **Detecção de Fraude em Cartões de Crédito:** https://bit.ly/38k0WYY
 
 ---
 
