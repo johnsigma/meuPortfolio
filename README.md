@@ -5,9 +5,9 @@
 # John Cunha
 <sub>*Estudante de Computação e entusiasta de Data Science*</sub>
 
-Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia, atualmente no 4º Período do curso. Esse é meu portifólio pessoal onde deixo os links para meus projetos tanto acadêmicos quanto pessoais, a medida que for fazendo mais projetos irei atualizando esse portifólio.
+Sou estudante de Ciência da Computação na Universidade Federal de Uberlândia, atualmente no 4º Período do curso. Esse é meu portifólio pessoal onde deixo os links para meus projetos tanto acadêmicos quanto pessoais, a medida que for fazendo mais projetos irei atualizando esse portfólio.
 
-Focarei esse portifólio mais em projetos de Data Science, o que não significa que apenas esses projetos serão linkados aqui.
+Focarei esse portfólio mais em projetos de Data Science, o que não significa que apenas esses projetos serão linkados aqui.
 
 **Background in:** Python, Análise de Dados, Ciência de Dados, Machine Learning.
 
