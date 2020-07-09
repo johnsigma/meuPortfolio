@@ -16,7 +16,6 @@ Focarei esse portfólio mais em projetos de Data Science, o que não significa q
 
 
 ## Projetos:
-Veja os tutoriais publicados do Sigmoidal:
 
 * **Calculadora simples feita em Python:** https://bit.ly/38GsZSl
 * **Modelo de Blockchain feito em Python:** https://bit.ly/3f9fDjR
