@@ -157,4 +157,6 @@ Ufa, chegamos ao fim do texto. Espero que tenha ficado mais claro agora pra voc�
 
 Espero que tenham gostado do artigo e se foi útil pra você deixe seu parabéns pra me incentivar ainda mais a escrever aqui. Qualquer feedback, seja positivo ou negativo, podem deixar nos comentários que eu ficaria muito agradecido.
 
+Pra quem quiser apenas os códigos que foram utilizados [clique aqui](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/Funcoes_Funcionais.ipynb) para ir para um repositório no GitHub contendo os códigos usados. Lá também há um link para o Google Colab onde você pode obter o arquivo .ipynb.
+
 No fim deixo o link para o meu portfólio do [Github](https://github.com/johnsigma/meuPortfolio) onde coloco meus projetos relacionados a Data Science e desenvolvimento em geral, e também o link do meu [LinkedIn](https://www.linkedin.com/in/john-cunha-a424721aa/) para caso queiram me acompanhar em outros projetos e textos. Até mais!
