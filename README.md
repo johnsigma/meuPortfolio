@@ -22,7 +22,7 @@ Focarei esse portfólio mais em projetos de Data Science, o que não significa q
 * **Análise de dados do Airbnbn de Sydney:** https://bit.ly/2YbDvwf
 * **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL
 * **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
-* **Detecção de Fraude em Cartões de Crédito:** https://bit.ly/38k0WYY
+* **Detecção de Fraude em Cartões de Crédito utilizando Machine Learning:** https://bit.ly/38k0WYY
 * **Churn Prediction de uma empresa de telecomunicações utilizando Machine Learning:** https://bit.ly/30kKnIu
 
 ---
