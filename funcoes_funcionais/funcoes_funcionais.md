@@ -8,7 +8,7 @@ Durante o terceiro período da minha graduação tive uma matéria chamada Progr
 
 O Python é majoritariamente uma linguagem orientada a objetos, mas ela também é multiparadigma e suporta a programação funcional e contêm as funções mencionadas.
 
-As funções que irei trazer são map, filter, reduce e zip. De bônus também irei mostrar como se monta uma lista e um dicionário por compreensão, que também são formas de construir essas estruturas de dados de uma forma mais funcional. Então bora lá.
+As funções que irei trazer são map, filter, reduce e zip. Então bora lá.
 
 ## Função `map`
 A função `map` recebe dois parâmetros de entrada. O primeiro uma função que você quer aplicar nos elementos e o segundo uma sequência com os elementos (pode ser uma lista, tupla, etc). A função `map` aplica a função de entrada em cada valor da sequência passada e retorna uma sequência com os valores retornados da função. Confuso? Nada, é muito mais simples do que parece, vamos pro código:
@@ -25,7 +25,7 @@ resultado = map(funcao_dobro, sequencia)
 resultado = list(resultado)
 print(f'Nossa lista de saída é: {resultado}')
 ```
-![Saída da Função map](https://raw.githubusercontent.com/johnsigma/meuPortifolio/master/funcoes_funcionais/map_saida.png)
+![Saída da Função map](https://raw.githubusercontent.com/johnsigma/meuPortfolio/master/funcoes_funcionais/map_saida.png)
 
 Viu como é simples usar a `map`? Ela pegou cada elemento da nossa lista (que poderia ser uma tupla também) e aplicou a função passada (nesse caso a função dobro). Importante lembrar que a função `map()` retorna um objeto iterável do tipo `map`, por isso devemos converter o retorno dela para uma estrutura de sequência (seja uma lista ou tupla), por isso usamos `resultado = list(resultado)`.
 
@@ -45,7 +45,7 @@ resultado = filter(funcao_letras, sequencia)
 resultado = tuple(resultado)
 print(f'Nossa tupla de saída é: {resultado}')
 ```
-![Saída da Função filter](https://github.com/johnsigma/meuPortifolio/blob/master/funcoes_funcionais/filter_saida.png?raw=true)
+![Saída da Função filter](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/filter_saida.png?raw=true)
 
 Perceba que utilizei uma tupla e ao invés de usar valores numéricos utilizei Strings (palavras), fiz isso apenas para dar mais exemplos de como utilizar essas funções, você pode utilizar listas e valores numéricos na função `filter` (assim como na `map`).
 
@@ -78,8 +78,85 @@ print(f'O maior valor da nossa sequência é: {resultado}')
 resultado = reduce(maior, lista, 25)
 print(f'O maior valor da nossa sequência é: {resultado}')
 ```
-![Saída da Função reduce](https://github.com/johnsigma/meuPortifolio/blob/master/funcoes_funcionais/reduce_saida.png?raw=true)
+![Saída da Função reduce](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/reduce_saida.png?raw=true)
 
 Bastante simples né!? Na nossa primeira saída a `reduce` aplicou a função `maior` nos valores da nossa sequência, primeiro ela pega os valores 1 e 8 e aplica na nossa `maior`, nossa função retorna o 8 por ele ser `maior` que o 1, após isso a `reduce` aplica a maior no 8 e no 7 que retorna o 8, por último se aplica a `maior` no 8 e 14 que retorna 14, como não há mais valores na nossa sequência a `reduce` retorna o valor 14.
 
 Percebe que quando nós passamos um inicializador como parâmetro a `reduce` o considera e aplica a função de entrada nele primeiramente. Então no nosso segundo exemplo a `reduce`  aplica a `maior` no 25 e no 1 e depois sucessivamente até retornar o maior valor comparado pela `maior` que é o própio inicializador (mas o retorno poderia não ser ele necessariamente).
+
+## Função `zip`
+Finalmente chegamos na nossa última função. Desta vez vamos ver a função `zip`, esta função funciona um pouco diferente das demais. Não passamos pra ela uma função de entrada e sim, sequências. A `zip` recebe duas (ou mais) sequências, que podem ser listas ou tuplas, e agrupa em tuplas os elementos das sequências passadas. A função então retorna um objeto iterável (que deve ser convertido em uma tupla ou lista) com as tuplas de elementos agrupados.
+
+Importante lembrar que quando as sequências passadas tiverem tamanhos diferentes então a `zip` retorna o número de tuplas da menor sequência. Por exemplo, se passarmos duas listas com três elementos cada então a `zip` retornará três tuplas de elementos agrupados. Mas se passarmos uma lista com dois elementos e outra com quatro elementos então a `zip` retornará apenas duas tuplas de elementos agrupados e os elementos que faltaram para agrupar da segunda lista passada são descartados. Vamos de exemplo em código que é o que interessa:
+
+```python
+# primeiro vamos criar nossas sequências, uma tupla e uma lista
+seq_1 = [1, 2, 3]
+seq_2 = (3, 2, 1)
+
+# agora vamos chamar a zip passando nossas sequÊncias e guardar o retorno em uma variável
+resultado = zip(seq_1, seq_2)
+
+# como nossa variável é um objeto iterável, então vamos fazer um cast para lista
+resultado = list(resultado)
+
+print(f'Elementos agrupados: {resultado}')
+
+# vamos agora agrupar elementos de sequências de tamanhos diferentes
+# vamos utilizar a seq_1 e criarmos outra sequência de tamanho diferente
+seq_3 = [7, 6, 5, 4]
+
+# podemos fazer o cast diretamente no zip sem guardar em uma variável primeiro
+resultado = tuple(zip(seq_1, seq_3))
+print(f'Elementos agrupados: {resultado}')
+```
+![Saída da Função zip](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/zip_saida1.png?raw=true)
+
+Com o código sempre fica mais fácil de entender (pelo menos pra mim rs). Veja que o primeiro resultado é uma lista de tuplas com cada tupla contendo os elementos agrupados e o segundo é uma tupla de tuplas contendo os elementos agrupados. Isso porque convertemos o retorno da `zip` primeiramente em uma lista e depois em uma tupla.
+
+"Blz, aprendi a usar a `zip`, mas como eu acesso as tuplas com os elementos agrupados ou como eu acesso um elemento individualmente?" Fácil, como convertemos o retorno da `zip` em uma estrutura de sequência (seja uma lista ou uma tupla) podemos acessar as tuplas, elementos individuais ou até mesmo desempacotar os elementos utilizando alguma estrutura de repetição. E vamos de mais código:
+
+```python
+# vamos utilizar a tupla de tuplas de elementos armazenada na variável "resultado"
+# vamos ver que elementos a varável possui
+print(f'Tupla de tuplas: {resultado}')
+```
+![Saída da Função zip](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/zip_saida2.png?raw=true)
+
+```python
+# para acessar uma tupla separadamente utilizamos a notação de acessar tuplas com índices
+# a mesma coisa se ao invés de uma tupla tivéssemos uma lista com as tuplas
+# vamos pegar e exibir a segunda tupla de elementos da nossa tupla, no caso a tupla (2, 6)
+tupla = resultado[1]
+print(f'Tupla separada: {tupla}')
+```
+![Saída da Função zip](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/zip_saida3.png?raw=true)
+
+```python
+# para acessar algum elemento individuamente utilizarmos a notação de acessar tuplas com índices
+# mas agora passamos dois índices, o primeiro irá pegar nossa tupla na tupla de tuplas
+# o segundo índice é onde vamos dizer qual elemento queremos pegar da tupla do primeiro índice
+# no nosso exemplo vamos pegar o segundo elemento da terceira tupla, no caso o o valor 5
+valor = resultado[2][1]
+print(f'Valor escolhido: {valor}')
+```
+![Saída da Função zip](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/zip_saida4.png?raw=true)
+
+```python
+# para desempacotar os valores da tupla de tuplas vamos utilizar um "for",
+# onde imprimiremos, individualmente, os valores de cada tupla
+for valor_1, valor_2 in resultado:
+  print(f'{valor_1} {valor_2}')
+```
+![Saída da Função zip](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/zip_saida5.png?raw=true)
+
+---
+## Conclusão
+
+Ufa, chegamos ao fim do texto. Espero que tenha ficado mais claro agora pra você como utilizar cada uma dessas funções. Importante ressaltar que Python é uma linguagem enorme e tem muitas outras funções que têm um funcionamento parecido com as funções citadas aqui, mas o intuito deste artigo é trazer as principais funções funcionais do Python.
+
+Espero que tenham gostado do artigo e se foi útil pra você deixe seu parabéns pra me incentivar ainda mais a escrever aqui. Qualquer feedback, seja positivo ou negativo, podem deixar nos comentários que eu ficaria muito agradecido.
+
+Pra quem quiser apenas os códigos que foram utilizados [clique aqui](https://github.com/johnsigma/meuPortfolio/blob/master/funcoes_funcionais/Funcoes_Funcionais.ipynb) para ir para um repositório no GitHub contendo os códigos usados. Lá também há um link para o Google Colab onde você pode obter o arquivo .ipynb.
+
+No fim deixo o link para o meu portfólio do [Github](https://github.com/johnsigma/meuPortfolio) onde coloco meus projetos relacionados a Data Science e desenvolvimento em geral, e também o link do meu [LinkedIn](https://www.linkedin.com/in/john-cunha-a424721aa/) para caso queiram me acompanhar em outros projetos e textos. Até mais!
