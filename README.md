@@ -23,7 +23,7 @@ Focarei esse portfólio mais em projetos de Data Science, o que não significa q
 * **Analisando a violência no Rio de Janeiro:** https://bit.ly/3hnGNoL
 * **Panorama do COVID-19 no Brasil:** https://bit.ly/3fIfWSP
 * **Detecção de Fraude em Cartões de Crédito utilizando Machine Learning:** https://bit.ly/38k0WYY
-* **Churn Prediction de uma empresa de telecomunicações utilizando Machine Learning:** https://bit.ly/30kKnIu
+* **Churn Prediction para uma empresa de telecomunicações utilizando Machine Learning:** https://bit.ly/30kKnIu
 
 ---
 
